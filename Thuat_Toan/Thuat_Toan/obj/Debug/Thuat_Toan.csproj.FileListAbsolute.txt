@@ -1,0 +1,7 @@
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\bin\Debug\Thuat_Toan.exe.config
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\bin\Debug\Thuat_Toan.exe
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\bin\Debug\Thuat_Toan.pdb
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\obj\Debug\Thuat_Toan.csproj.AssemblyReference.cache
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\obj\Debug\Thuat_Toan.csproj.CoreCompileInputs.cache
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\obj\Debug\Thuat_Toan.exe
+C:\Users\Bravo15\GitHub\Traning\Thuat_Toan\Thuat_Toan\Thuat_Toan\Thuat_Toan\obj\Debug\Thuat_Toan.pdb
