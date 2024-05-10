@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai16MaxByPrice
+    public class Bai16MaxByPrice
     {
         /// <summary>
         /// Finds and returns the product with the maximum price from the given list.

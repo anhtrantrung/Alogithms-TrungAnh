@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai14MapProductByCategory
+    public class Bai14MapProductByCategory
     {
         /// <summary>
         /// Creates a dictionary that maps category indices to category names.

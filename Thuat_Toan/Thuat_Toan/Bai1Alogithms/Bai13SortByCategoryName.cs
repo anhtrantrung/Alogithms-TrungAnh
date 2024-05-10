@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai13SortByCategoryName
+    public class Bai13SortByCategoryName
     {
         /// <summary>
         /// Sorts the given list of Product objects by the categories' positions in the provided category list.

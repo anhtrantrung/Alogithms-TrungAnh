@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai5FindProductByCategoryId
+    public class Bai5FindProductByCategoryId
     {
         /// <summary>
         /// Prompts the user to enter data via the console

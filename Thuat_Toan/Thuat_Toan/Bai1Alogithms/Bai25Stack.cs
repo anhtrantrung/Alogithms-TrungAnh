@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai25Stack<T>
+    public class Bai25Stack<T>
     {
         private List<T> elements = new List<T>();
 

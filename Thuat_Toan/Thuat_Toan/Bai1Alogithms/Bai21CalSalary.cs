@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai21CalSalary
+    public class Bai21CalSalary
     {
         /// <summary>
         /// Calculates the salary recursively based on an initial salary and the number of iterations.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai22CalMonth
+    public class Bai22CalMonth
     {
         /// <summary>
         /// Calculates the number of months needed to reach a target amount of money recursively.

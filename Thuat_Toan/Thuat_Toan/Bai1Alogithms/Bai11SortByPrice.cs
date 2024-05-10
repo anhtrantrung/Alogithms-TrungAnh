@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai11SortByPrice
+    public class Bai11SortByPrice
     {
         /// <summary>
         /// Sorts the given list of Product objects by their prices in ascending order using the bubble sort algorithm.

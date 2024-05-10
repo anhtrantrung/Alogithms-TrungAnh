@@ -7,7 +7,7 @@ using Thuat_Toan.Bai1Alogithms.entity;
 
 namespace Thuat_Toan.Bai1Alogithms
 {
-    internal class Bai6FindProductByPrice
+    public class Bai6FindProductByPrice
     {
         /// <summary>
         /// Prompts the user to enter data via the console 
