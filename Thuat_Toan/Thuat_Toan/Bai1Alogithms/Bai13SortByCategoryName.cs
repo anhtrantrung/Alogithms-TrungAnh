@@ -9,38 +9,20 @@ namespace Thuat_Toan.Bai1Alogithms
 {
     public class Bai13SortByCategoryName
     {
-        /// <summary>
-        /// Sorts the given list of Product objects by the categories' positions in the provided category list.
-        /// </summary>
-        /// <param name="productList"></param>
-        /// <param name="categoryList"></param>
-        /// <returns>A sorted list of Product objects by the categories' positions in the provided category list.</returns>
-        public List<Product> SortByCategoryName(List<Product> productList, List<string> categoryList)
+        public static List<Product> SortByCategoryName(List<Product> listProduct, List<Category> listCategory)
         {
-            for (int i = 1; i < productList.Count; i++)
+            for (int i = 0; i < listProduct.Count; i++)
             {
-                Product key = productList[i];
-                int j = i - 1;
-
-                while (j >= 0 && GetCategoryIndex(productList[j].Name, categoryList) > GetCategoryIndex(key.Name, categoryList))
+                Product product = listProduct[i];
+                int j = i-1;
+                while (j>=0 && string.Compare(listCategory.Find(c => c.Id==listProduct[j].CategoryId).Name, listProduct.Find(c => c.CategoryId==product.CategoryId).Name)>0) 
                 {
-                    productList[j + 1] = productList[j];
-                    j = j - 1;
+                    listProduct[j+1]= listProduct[j];
+                    j=j-1;
                 }
-                productList[j + 1] = key;
+                listProduct[j+1]=product;
             }
-            return productList;
-        }
-
-        /// <summary>
-        /// Retrieves the index of the specified category name in the provided category list.
-        /// </summary>
-        /// <param name="categoryName"></param>
-        /// <param name="categoryList"></param>
-        /// <returns>The index of the specified category name in the category list, or -1 if the category name is not found.</returns>
-        public static int GetCategoryIndex(string categoryName, List<string> categoryList)
-        {
-            return categoryList.IndexOf(categoryName);
+            return listProduct;
         }
     }
 }

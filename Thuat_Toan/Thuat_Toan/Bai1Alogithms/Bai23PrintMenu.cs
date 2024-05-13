@@ -13,12 +13,11 @@ namespace Thuat_Toan.Bai1Alogithms
         /// </summary>
         /// <param name="menus"></param>
         /// <param name="prefix"></param>
-        private void PrintMenu(List<MenuItem> menus, string prefix = "")
+        private void PrintMenu(List<MenuItem> menus)
         {
             foreach (var menu in menus)
             {
-                Console.WriteLine($"{prefix}{menu.Name}");
-                PrintMenu(menu.SubMenuItems, prefix + "--");
+               
             }
         }
     }

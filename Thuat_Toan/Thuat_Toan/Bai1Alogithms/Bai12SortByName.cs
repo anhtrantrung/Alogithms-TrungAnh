@@ -18,14 +18,14 @@ namespace Thuat_Toan.Bai1Alogithms
         {
             for (int i = 1; i < productList.Count; i++)
             {
-                Product key = productList[i];
+                Product produc = productList[i];
                 int j = i - 1;
-                while (j >= 0 && productList[j].Name.Length < key.Name.Length)
+                while (j >= 0 && productList[j].Name.Length < produc.Name.Length)
                 {
                     productList[j + 1] = productList[j];
                     j = j - 1;
                 }
-                productList[j + 1] = key;
+                productList[j + 1] = produc;
             }
             return productList;
         }

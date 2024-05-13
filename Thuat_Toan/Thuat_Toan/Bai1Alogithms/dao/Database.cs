@@ -102,26 +102,32 @@ namespace Thuat_Toan.Bai1Alogithms
             return productList;
         }
 
-        public List<Product> SortByCategoryName(List<Product> productList, List<string> categoryList)
+        public static List<Product> SortByCategoryName(List<Product> listProduct, List<Category> listCategory)
         {
-            for (int i = 1; i < productList.Count; i++)
+            // Tạo một từ điển để ánh xạ ID loại sản phẩm với tên loại sản phẩm tương ứng
+            Dictionary<int, string> categoryNames = new Dictionary<int, string>();
+            foreach (var category in listCategory)
             {
-                Product key = productList[i];
-                int j = i - 1;
-
-                while (j >= 0 && GetCategoryIndex(productList[j].Name, categoryList) > GetCategoryIndex(key.Name, categoryList))
-                {
-                    productList[j + 1] = productList[j];
-                    j = j - 1;
-                }
-                productList[j + 1] = key;
+                categoryNames.Add(category.Id, category.Name);
             }
-            return productList;
-        }
 
-        public static int GetCategoryIndex(string categoryName, List<string> categoryList)
-        {
-            return categoryList.IndexOf(categoryName);
+            // Tạo một danh sách mới để lưu trữ các sản phẩm đã được sắp xếp
+            List<Product> sortedList = new List<Product>();
+
+            // Lặp qua từng loại sản phẩm và thêm các sản phẩm của loại đó vào danh sách đã sắp xếp
+            foreach (var category in listCategory)
+            {
+                foreach (var product in listProduct)
+                {
+                    if (product.CategoryId == category.Id)
+                    {
+                        sortedList.Add(product);
+                    }
+                }
+            }
+
+            var sortedProducts = listProduct.OrderBy(p => categoryNames[p.CategoryId]);
+            return sortedList;
         }
 
         public Dictionary<int, string> CreateMapCategory(List<string> categoryList)
